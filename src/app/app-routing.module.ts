@@ -4,9 +4,12 @@ import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './authentication/login/login.component';
 import {RegisterComponent} from './authentication/register/register.component';
 import {RecoveryComponent} from './authentication/recovery/recovery.component';
+import {AuthGuard} from "./authentication/AuthGuard";
 
 const appRoutes: Routes = [
   {path: 'accueil', component: HomeComponent},
+  {path: 'accueil/:jwt', component: HomeComponent},
+  {path: 'calendar', component: HomeComponent, canActivate: [AuthGuard]},
   {path: '', component: HomeComponent},
   {path: 'connexion', component: LoginComponent},
   {path: 'inscription', component: RegisterComponent},

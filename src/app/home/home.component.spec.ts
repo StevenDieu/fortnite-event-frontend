@@ -3,7 +3,7 @@ import {expect} from '@angular/platform-browser/testing/src/matchers';
 import {describe} from 'selenium-webdriver/testing';
 import {HomeComponent} from './home.component';
 
-describe('HomeComponent', () => {
+describe('CalendarComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 

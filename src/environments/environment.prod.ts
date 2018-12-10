@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  uriBackend : 'http://localhost:3000'
 };

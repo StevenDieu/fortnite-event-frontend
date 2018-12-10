@@ -2,8 +2,14 @@
   <span routerLink="/">Fortnite Event</span>
   <div class="menu-right">
     <div>
-      <button routerLink="/connexion" mat-raised-button color="primary">Connexion</button>
-      <button routerLink="/inscription" mat-raised-button color="primary">Inscription</button>
+      <div *ngIf="isConnected(); else menuConnect">
+        <button routerLink="/connexion" mat-raised-button color="primary">Connexion</button>
+        <button routerLink="/inscription" mat-raised-button color="primary">Inscription</button>
+      </div>
+      <ng-template #menuConnect>
+        <button (click)="logout()" mat-raised-button color="primary">Déconnexion</button>
+      </ng-template>
+
     </div>
   </div>
 </mat-toolbar>

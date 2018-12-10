@@ -1,16 +1,21 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.less']
+  styleUrls: ['./register.component.less', '../authentification.component.less']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
 
   constructor() {
   }
 
-  ngOnInit() {
+  registerGmail() {
+    window.location.href = environment.uriBackend + '/auth/google';
   }
 
+  registerFacebook() {
+    window.location.href = environment.uriBackend + '/auth/facebook';
+  }
 }
