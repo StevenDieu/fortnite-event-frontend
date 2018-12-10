@@ -1,0 +1,30 @@
+<mat-card class="grid" id="login-box">
+  <div class="row">
+
+    <div class="col-xs4-4 col-lg-6 bouton-reseau-sociaux">
+      <div class="opacity-img">
+        <span class="loginwith">Connexion<br/>réseaux sociaux</span>
+        <button class="social-signin facebook">Connexion avec Facebook</button>
+        <button class="social-signin twitter">Connexion avec Twitter</button>
+        <button class="social-signin google">Connexion avec Gmail</button>
+      </div>
+    </div>
+
+    <div class="col-xs4-4 col-lg-6 formulaire">
+      <form>
+        <h1>Connexion</h1>
+        <mat-form-field class="example-full-width">
+          <input matInput name="email" placeholder="Email">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Mot de passe" name="password">
+        </mat-form-field>
+        <button type="submit" mat-raised-button color="primary">Connexion</button>
+        <a routerLink="/recuperation-mot-de-passe">Mot de passe oublié ?</a>
+      </form>
+    </div>
+
+    <div class="or">OU</div>
+
+  </div>
+</mat-card>
