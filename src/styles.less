@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import url( 'https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons');
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@wide-screen-down: ~'(max-width: 1199px)';
+@desktop-down: ~'(max-width: 991px)';
+@tablet-down: ~'(max-width: 767px)';
+@phone-down: ~'(max-width: 480px)';
+@small-phone-down: ~'(max-width: 320px)';
+
+*:focus {
+  outline: none;
+}
 
 body {
   margin: 0;

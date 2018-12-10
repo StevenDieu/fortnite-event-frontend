@@ -3,11 +3,11 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
-import {LoginComponent} from './login/login.component';
-import {RegisterComponent} from './register/register.component';
+import {LoginComponent} from './authentication/login/login.component';
+import {RegisterComponent} from './authentication/register/register.component';
 import {AppRoutingModule} from './app-routing.module';
 import {MenuComponent} from './menu/menu.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
   MatCardModule,
@@ -22,7 +22,7 @@ import {
   MatTableModule,
   MatToolbarModule
 } from '@angular/material';
-import {FormsModule} from "@angular/forms";
+import { RecoveryComponent } from './authentication/recovery/recovery.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +31,7 @@ import {FormsModule} from "@angular/forms";
     LoginComponent,
     RegisterComponent,
     MenuComponent,
+    RecoveryComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +51,6 @@ import {FormsModule} from "@angular/forms";
     MatCardModule,
     MatMenuModule,
     BrowserModule,
-    FormsModule,
     MatFormFieldModule,
     MatInputModule
   ],
